@@ -102,13 +102,11 @@ Revenue is calculated using:
 ```text
 Revenue = Quantity × Unit Price × (1 - Discount)
 
+---
 
-```text
-Revenue = Quantity × Unit Price × (1 - Discount)
 📊 Excel Analysis
 
 Excel was used as an additional analysis and validation layer.
-
 The Excel analysis supports:
 
 Data exploration
@@ -116,6 +114,8 @@ Business calculations
 Trend analysis
 Data validation
 Supporting analysis for the Power BI report
+
+---
 
 🧹 Data Cleaning & Transformation
 
@@ -133,6 +133,8 @@ Validating table relationships
 Performing data consistency checks
 
 The cleaned data was then used for data modeling and dashboard development.
+
+---
 
 # 📊 Power BI Dashboards
 
@@ -217,6 +219,8 @@ The Supplier Performance dashboard analyzes supplier contribution, pricing and d
 - Total Products by Supplier
 - Supplier Distribution by Country
 
+---
+
 📌 Key Business Insights
 
 The analysis identified several important business patterns:
@@ -227,6 +231,8 @@ A relatively small group of customers contributes a significant share of total s
 Employee order-handling volumes vary across employees.
 A limited number of suppliers contribute a significant proportion of products.
 Product demand and sales performance vary across categories and time periods.
+
+---
 
 🎯 Business Questions Addressed
 
@@ -256,6 +262,8 @@ Suppliers
 What are the regional trends in supplier distribution and pricing?
 How are suppliers distributed across product categories?
 How do supplier pricing and categories vary across regions?
+
+---
 
 📁 Project Structure
 northwind_business_intelligence_analysis/
@@ -301,6 +309,8 @@ northwind_business_intelligence_analysis/
 │   └── supplier-performance-analytics.png
 │
 └── README.md
+
+---
 
 💡 Skills Demonstrated
 
