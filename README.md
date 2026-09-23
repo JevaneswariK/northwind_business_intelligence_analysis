@@ -343,10 +343,3 @@ northwind_business_intelligence_analysis/
 │
 └── README.md
 
----
-
-# 👩‍💻 Author
-
-**Jevaneswari K**
-
-**Data Analytics | SQL | Excel | Power BI**
