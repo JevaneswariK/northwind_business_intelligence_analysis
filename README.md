@@ -1,138 +1,97 @@
-# Northwind Traders – End-to-End Data Analytics & Power BI
-
-An end-to-end data analytics project using the **Northwind Traders** dataset to analyze sales, customers, products, inventory, employees, and suppliers.
-
-The project uses **MySQL, Excel, Power Query, and Power BI** to transform raw relational data into business insights and interactive dashboards.
-
----
+# Northwind Traders – End-to-End Data Analytics & Power BI Dashboard
 
 ## 📌 Project Overview
 
-Northwind Traders is a fictional wholesale company that imports and exports specialty food products across international markets.
+Northwind Traders is a fictional wholesale organization that imports and exports specialty food products across international markets.
 
-The objective of this project is to analyze the company's operational and sales data and build a comprehensive Business Intelligence solution.
+This project demonstrates an end-to-end data analytics workflow, transforming raw Northwind transactional data into interactive Power BI dashboards for business analysis and decision-making.
 
-The project covers:
+The project focuses on:
 
-- Sales analysis
-- Customer analysis
-- Product and category analysis
-- Inventory analysis
-- Employee performance analysis
-- Supplier analysis
-- Geographic analysis
-- Order and revenue trends
-- Product demand and anomaly analysis
+- Sales Performance
+- Customer Behavior
+- Inventory Trends
+- Employee Productivity
+- Supplier Contributions
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🎯 Project Objective
 
-| Tool | Purpose |
-|---|---|
-| **MySQL Workbench** | SQL analysis and Exploratory Data Analysis |
-| **Microsoft Excel** | Data analysis and supporting calculations |
-| **Power Query** | Data cleaning and transformation |
-| **Power BI** | Data modeling, DAX, KPIs and interactive dashboards |
+The objective of this project is to build a visually appealing, interactive, and user-friendly Power BI report that provides meaningful insights into Northwind Traders' business performance.
+
+The dashboards enable stakeholders to:
+
+- Monitor business performance
+- Identify sales and customer trends
+- Analyze inventory and product movement
+- Evaluate employee productivity
+- Understand supplier contributions
+- Explore data using interactive filters and slicers
 
 ---
 
 ## 🗂️ Dataset
 
-The project uses the Northwind Traders relational dataset.
+The Northwind Traders dataset represents the operational and sales data of a fictional wholesale company.
 
-### Tables
+### Tables Used
 
-- **Customers** – Customer details, contact information and location
-- **Employees** – Employee details, titles, hire dates and reporting information
-- **Orders** – Order dates, customers, employees and shipping information
-- **Order Details** – Products, quantities, prices and discounts for each order
-- **Products** – Product information, pricing, inventory and supplier details
-- **Suppliers** – Supplier information and location
-- **Categories** – Product categories
-- **Shippers** – Shipping company information
+- Customers
+- Employees
+- Orders
+- Order Details
+- Products
+- Suppliers
+- Shippers
+- Categories
 
-These tables are connected through primary and foreign key relationships for integrated analysis.
-
----
-
-# 🔍 MySQL Exploratory Data Analysis
-
-MySQL Workbench was used to perform business-oriented exploratory analysis.
-
-### Customer Analysis
-
-- Average orders per customer
-- High-value repeat customers
-- Customer order patterns by country and city
-- Customer total spending
-- Customer order frequency
-- Preferred product categories
-- Customer segmentation based on order frequency
-
-### Sales & Product Analysis
-
-- Revenue by product category
-- Quantity sold by category
-- Product sales performance
-- Product pricing
-- Inventory levels
-- Seasonal product demand
-- Product sales anomalies
-
-### Employee Analysis
-
-- Employee distribution by country
-- Employee distribution by job title
-- Employee courtesy title distribution
-- Hiring trends by year and title
-
-### Supplier Analysis
-
-- Supplier distribution by country
-- Suppliers by product category
-- Supplier product counts
-- Supplier pricing
-- Regional supplier pricing patterns
-
-### Revenue Calculation
-
-Revenue is calculated using:
-
-```text
-Revenue = Quantity × Unit Price × (1 - Discount)
+These tables are connected through primary and foreign key relationships, enabling integrated analysis across different business areas.
 
 ---
 
-📊 Excel Analysis
+## 🛠️ Tools & Technologies
 
-Excel was used as an additional analysis and validation layer.
-The Excel analysis supports:
-
-Data exploration
-Business calculations
-Trend analysis
-Data validation
-Supporting analysis for the Power BI report
+- **MySQL Workbench** – SQL analysis and data exploration
+- **Microsoft Excel** – Initial data handling
+- **Power Query** – Data cleaning and transformation
+- **Power BI** – Data modeling, visualization, and dashboard development
 
 ---
 
-🧹 Data Cleaning & Transformation
+## 🔄 Project Workflow
 
-Power Query was used to prepare the data for Power BI.
-Key transformations included:
+1. Data collection from CSV files
+2. Data import into Power BI
+3. Data cleaning and transformation using Power Query
+4. Data validation and consistency checks
+5. Data modeling using table relationships
+6. Dashboard design and visualization
+7. Business insight generation and interpretation
 
-Handling missing values
-Replacing blank Region values with Unknown
-Removing unnecessary columns
-Removing the unused Categories Picture column
-Removing unnecessary Employees Photo and Notes columns
-Removing the Suppliers Homepage column
-Correcting data types
-Validating table relationships
-Performing data consistency checks
+---
 
-The cleaned data was then used for data modeling and dashboard development.
+## 🧹 Data Cleaning & Transformation
+
+Data preparation was performed using Power Query.
+
+### Cleaning Activities
+
+- Replaced missing **Region** and **Fax** values with `"Unknown"` where applicable
+- Removed the unnecessary **Picture** column from Categories
+- Removed **Photo** and **Notes** columns from Employees
+- Removed **Homepage** from Suppliers
+- Removed rows containing approximately 1–3% missing values where appropriate
+- Corrected incorrect date and data types
+- Standardized the dataset for analysis and visualization
+
+### Data Validation
+
+- Compared row counts before and after cleaning
+- Verified relationships between tables
+- Validated numerical fields
+- Validated date fields
+- Checked overall data consistency
 
 ---
 
@@ -142,130 +101,165 @@ The cleaned data was then used for data modeling and dashboard development.
 
 ![Sales Performance Overview](screenshots/sales-performance-overview.png)
 
-The Sales Performance dashboard provides an overview of sales and revenue performance.
+Provides a high-level view of sales performance, revenue, orders, monthly revenue trends, and country-level performance.
 
-**Key Analysis:**
+### Key Analysis
+
 - Total Revenue
-- Top 20% Revenue Share
-- Average Order Value
-- Highest Revenue Category
+- Total Orders
+- Monthly Revenue Trends
+- Revenue by Country
 - Revenue by Product Category
-- Revenue vs Discount
-- Revenue trends over time
+- Top-Performing Countries
+- Sales Performance Trends
 
+---
 
 ## 2. Customer Analytics Overview
 
 ![Customer Analytics Overview](screenshots/customer-analytics-overview.png)
 
-The Customer Analytics dashboard analyzes customer behavior and geographic distribution.
+Analyzes customer behavior and geographic distribution to understand customer contribution and regional sales patterns.
 
-**Key Analysis:**
-- Total Customers
-- High Value Customers %
-- Customer Lifetime Value
-- Customer Retention Rate
-- Customers by Contact Title
-- Customer Distribution by Segment
-- Customer Distribution by Country
-- Top Customers by Revenue
+### Key Analysis
 
+- Customer Distribution
+- Customer Segmentation
+- Customer Geographic Distribution
+- Customer Revenue Contribution
+- Customer Order Patterns
+- Regional Customer Analysis
+
+---
 
 ## 3. Inventory Trends Overview
 
 ![Inventory Trends Overview](screenshots/inventory-trends-overview.png)
 
-The Inventory Trends dashboard analyzes inventory levels and product movement.
+Monitors product inventory and sales patterns to support inventory planning and stock management.
 
-**Key Analysis:**
-- Active Categories
-- Total Units in Stock
-- Total Units Sold
+### Key Analysis
+
+- Product Stock Levels
+- Units Sold
+- Inventory Trends
 - Inventory Turnover
-- Sales vs Stock by Category
-- Stock Coverage by Category
-- Units Sold and Turnover by Category
-- Top 5 Revenue Products
+- Product Sales Patterns
+- High-Demand Products
+- Category-Level Inventory Analysis
 
+---
 
 ## 4. Workforce Analytics
 
 ![Workforce Analytics](screenshots/workforce-analytics.png)
 
-The Workforce Analytics dashboard analyzes employee productivity and operational performance.
+Evaluates employee productivity and operational contribution by analyzing employee order handling and performance.
 
-**Key Analysis:**
-- Performance Index
-- On-Time Deliveries %
-- Average Order Processing Time
-- Total Revenue by Employee
-- Average Performance Index by Role
-- Employee Order Volume
+### Key Analysis
 
+- Employee Order Handling
+- Employee Productivity
+- Orders by Employee
+- Employee Contribution
+- Employee Performance Analysis
+- Workforce Distribution
+
+---
 
 ## 5. Supplier Performance Analytics
 
 ![Supplier Performance Analytics](screenshots/supplier-performance-analytics.png)
 
-The Supplier Performance dashboard analyzes supplier contribution, pricing and distribution.
+Analyzes supplier contributions and product supply patterns to understand supplier dependency and product availability.
 
-**Key Analysis:**
-- Total Suppliers
-- Average Delivery Delay
-- Average Shipping Time
-- Top Supplier Contribution
-- Revenue by Supplier
-- Average Unit Price by Supplier
-- Total Products by Supplier
-- Supplier Distribution by Country
+### Key Analysis
 
----
-
-📌 Key Business Insights
-
-The analysis identified several important business patterns:
-
-The United States and Germany contribute a significant portion of overall revenue.
-Beverages and Dairy Products are important revenue-generating categories.
-A relatively small group of customers contributes a significant share of total sales.
-Employee order-handling volumes vary across employees.
-A limited number of suppliers contribute a significant proportion of products.
-Product demand and sales performance vary across categories and time periods.
+- Supplier Contribution
+- Supplier Distribution
+- Products by Supplier
+- Supplier Geographic Distribution
+- Supplier Product Supply
+- Supplier Performance Analysis
 
 ---
 
-🎯 Business Questions Addressed
+# 📈 Key Business Insights
 
-The project was designed to answer questions including:
+### 🌎 Revenue Concentration by Country
 
-Customers
-What is the average number of orders per customer?
-Are there high-value repeat customers?
-How do customer order patterns vary by city or country?
-What are the different customer order-frequency segments?
-What are customers' preferred product categories?
+The United States and Germany generate a significant portion of total revenue, highlighting their importance to overall business performance.
 
-Products & Sales
-Which product categories contribute most to revenue?
-Which products have the highest sales volume?
-How does product demand change across months or seasons?
-Are there anomalies in product sales performance?
-How are pricing, inventory and sales related?
+### 🥤 Top-Performing Product Categories
 
-Employees
-What is the geographic and title-wise distribution of employees?
-What trends exist in employee hiring dates?
-What patterns exist between employee titles and courtesy titles?
-How does employee order volume and revenue contribution vary?
+Beverages and Dairy Products contribute a large share of sales, making these categories important areas for inventory management and sales analysis.
 
-Suppliers
-What are the regional trends in supplier distribution and pricing?
-How are suppliers distributed across product categories?
-How do supplier pricing and categories vary across regions?
+### 👥 Customer Revenue Distribution
+
+A relatively small group of customers contributes a large percentage of total sales, highlighting the importance of understanding high-value customer behavior.
+
+### 👨‍💼 Employee Productivity Differences
+
+Employees handle different numbers of orders, providing useful insights into workforce productivity and operational efficiency.
+
+### 🚚 Supplier Dependency
+
+A limited number of suppliers provide a large proportion of products. Understanding supplier contribution can help monitor supplier dependency and potential supply-chain risks.
 
 ---
 
-📁 Project Structure
+# 📊 SQL Analysis
+
+SQL analysis was performed using MySQL Workbench to explore business questions across customers, products, orders, employees, and suppliers.
+
+### Customer Analysis
+
+- Average orders per customer
+- High-value repeat customers
+- Customer order patterns by city and country
+- Customer spending and order frequency
+- Preferred product categories
+- Customer frequency segmentation
+
+### Product & Sales Analysis
+
+- Revenue by category
+- Revenue by product
+- Country and category performance
+- Product price bands
+- Stock versus sales analysis
+- Seasonal demand
+- Monthly sales anomalies
+
+### Employee Analysis
+
+- Employee geographic distribution
+- Employee title distribution
+- Employee hiring trends
+- Employee courtesy-title distribution
+
+### Supplier Analysis
+
+- Supplier geographic distribution
+- Supplier distribution by category
+- Supplier pricing
+- Supplier categories by region
+
+---
+
+# 💡 Business Value
+
+This project demonstrates how raw transactional data can be transformed into actionable business insights through:
+
+**Data → Cleaning → Validation → SQL Analysis → Data Modeling → Power BI → Business Insights**
+
+The final dashboards provide stakeholders with an interactive way to monitor business performance, identify trends, analyze operational areas, and support data-driven decision-making.
+
+---
+
+# 📁 Project Structure
+
+```text
 northwind_business_intelligence_analysis/
 │
 ├── 01_dataset/
@@ -284,6 +278,7 @@ northwind_business_intelligence_analysis/
 │
 ├── 03_sql_scripts/
 │   ├── northwind_eda_queries.sql
+│   
 │
 ├── 04_excel_analysis/
 │   ├── northwind_traders_excel_analysis.xlsx
@@ -309,29 +304,3 @@ northwind_business_intelligence_analysis/
 │   └── supplier-performance-analytics.png
 │
 └── README.md
-
----
-
-💡 Skills Demonstrated
-
-SQL
-MySQL Workbench
-Exploratory Data Analysis
-Excel
-Power Query
-Power BI
-DAX
-Data Cleaning
-Data Transformation
-Data Modeling
-KPI Development
-Data Visualization
-Business Intelligence
-Business Analysis
-
-👩‍💻 Author
-Jevaneswari K
-Data Analytics | SQL | Excel | Power BI
-
-⭐ Project Summary
-This project demonstrates an end-to-end Business Intelligence workflow, starting from raw relational data and SQL-based analysis through Excel and Power Query, and finally delivering interactive Power BI dashboards for business reporting and decision support.
