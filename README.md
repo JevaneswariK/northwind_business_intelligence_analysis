@@ -1,6 +1,6 @@
 # Northwind Traders – End-to-End Data Analytics & Power BI Dashboard
 
-## 📌 Project Overview
+## 📌 Project Overview conclusion
 
 Northwind Traders is a fictional wholesale organization that imports and exports specialty food products across international markets.
 
@@ -307,16 +307,27 @@ northwind_business_intelligence_analysis/
 
 ---
 
-🏁 Conclusion
+# 💡 Skills Demonstrated
 
-This project demonstrates an end-to-end data analytics workflow using Northwind Traders data, from data preparation and validation to SQL analysis and interactive Power BI dashboard development.
+- SQL
+- MySQL Workbench
+- Exploratory Data Analysis
+- Excel
+- Power Query
+- Power BI
+- DAX
+- Data Cleaning
+- Data Transformation
+- Data Modeling
+- KPI Development
+- Data Visualization
+- Business Intelligence
+- Business Analysis
 
-The final report provides insights into:
+---
 
-Sales performance
-Customer behavior
-Inventory trends
-Employee productivity
-Supplier contributions
+# 👩‍💻 Author
 
-The project showcases practical skills in SQL, Excel, Power Query, data modeling, Power BI, data visualization, and business analysis.
+**Jevaneswari K**
+
+**Data Analytics | SQL | Excel | Power BI**
